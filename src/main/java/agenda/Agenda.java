@@ -13,8 +13,8 @@ public class Agenda {
      * @param e the event to add
      */
     public void addEvent(Event e) {
-        // TODO : implémenter cette méthode
-        throw new UnsupportedOperationException("Pas encore implémenté");
+        Set<Event> agenda = new HashSet<Event>();
+        agenda.add(e);
     }
 
     /**
@@ -25,6 +25,13 @@ public class Agenda {
      */
     public List<Event> eventsInDay(LocalDate day) {
         // TODO : implémenter cette méthode
+        
+        for (Event agenda : agenda){
+            if (e.isInDay == true) {
+                
+            }
+
+        }
         throw new UnsupportedOperationException("Pas encore implémenté");
     }
 }

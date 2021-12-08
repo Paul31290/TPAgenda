@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: agenda.EventTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.04 s <<< FAILURE! - in agenda.EventTest
+overlappingEventIsInDayAfter  Time elapsed: 0.028 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Cet événement déborde sur le jour suivant ==> expected: <true> but was: <false>
+	at agenda.EventTest.overlappingEventIsInDayAfter(EventTest.java:46)
+
+toStringShowsEventTitle  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: toString() doit montrer le titre de l'événements ==> expected: <true> but was: <false>
+	at agenda.EventTest.toStringShowsEventTitle(EventTest.java:50)
+
+eventIsInItsStartDay  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Un événement a lieu dans son jour de début ==> expected: <true> but was: <false>
+	at agenda.EventTest.eventIsInItsStartDay(EventTest.java:34)
+

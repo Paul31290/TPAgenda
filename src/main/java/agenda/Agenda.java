@@ -8,7 +8,7 @@ import java.util.*;
  */
 public class Agenda {
 
-    private List<Event> agenda = new ArrayList<Event>();
+    private List<Event> events = new ArrayList<Event>();
     Event e;
 
     /**
@@ -17,7 +17,7 @@ public class Agenda {
      * @param e the event to add
      */
     public void addEvent(Event e) {
-        agenda.add(e);
+        events.add(e);
     }
 
     /**
@@ -27,9 +27,8 @@ public class Agenda {
      * @return and iteraror to the events that occur on that day
      */
     public List<Event> eventsInDay(LocalDate day) {
-        // TODO : implémenter cette méthode
         List<Event> eventsInDay = new ArrayList<Event>();
-        for (Event agenda : agenda){
+        for (Event events : events){
             if (e.isInDay(day) == true) {
                 eventsInDay.add(e);
             }
